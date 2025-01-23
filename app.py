@@ -35,7 +35,7 @@ st.sidebar.title("Settings")
 api_key = st.sidebar.text_input("Enter API key", type="password")
 
 # Dropdown to select various Open AI models
-llm = st.sidebar.selectbox("Select an model",[""])
+llm = st.sidebar.selectbox("Select an model",["gpt-4o"])
 
 # Adjust response parameter
 temperature = st.sidebar.slider("Temperature", min_value=0.0, max_value=1.0, value=0.7)
@@ -46,7 +46,7 @@ st.write("ask any question")
 user_input = st.text_input("you:")
 
 if user_input:
-    response = generate_response(user_input,api_key,llm,temperature,max_tokens)
+    response = generate_response(user_input,llm,temperature,max_tokens)
     st.write(response)
 else:
     st.write("Please provide the query")
