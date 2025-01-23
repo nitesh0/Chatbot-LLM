@@ -4,18 +4,19 @@ python-dotenv
 langchain-community
 pypdf
 bs4
-arxiv
+# arxiv
 pymupdf
-wikipedia
+# wikipedia
 langchain-text-splitters
-langchain_openai
-chromadb
+# langchain_openai
+# chromadb
 sentence_transformers
 langchain_huggingface
-faiss-cpu
 streamlit
 langchain_groq
 fastapi
 langserve
 huggingface_hub
 sse_starlette
+
+# langchain_chroma
